@@ -3,7 +3,7 @@
  * File: init.go
  */
 
-package lib
+package rabbitmqHash
 
 import (
 	"fmt"

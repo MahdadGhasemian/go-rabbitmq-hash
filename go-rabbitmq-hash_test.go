@@ -3,7 +3,7 @@
  * File: go-rabbitmq-hash_test.go
  */
 
-package lib
+package rabbitmqHash
 
 import (
 	"testing"

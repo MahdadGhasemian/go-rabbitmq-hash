@@ -3,7 +3,7 @@
  * File: go-rabbitmq-hash.go
  */
 
-package lib
+package rabbitmqHash
 
 import (
 	"crypto/sha256"
