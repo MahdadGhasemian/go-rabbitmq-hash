@@ -22,7 +22,7 @@ package main
 import (
     "fmt"
 
-    "github.com/MahdadGhasemian/go-rabbitmq-hash"
+    rabbitmqHash "github.com/MahdadGhasemian/go-rabbitmq-hash"
 )
 
 func main() {
