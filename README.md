@@ -13,7 +13,7 @@ $ go mod init example.com/my-hash-demo
 Note that you need to include the **v** in the version tag.
 
 ```
-$ go get github.com/MahdadGhasemian/go-rabbitmq-hash@v0.1.0
+$ go get github.com/MahdadGhasemian/go-rabbitmq-hash@v0.1.1
 ```
 
 ```go
@@ -27,9 +27,11 @@ import (
 
 func main() {
     // random salt
-    fmt.Println(gorabbitmqhash.Hash("passowrd",0))
-    // salt = 1234
-    fmt.Println(gorabbitmqhash.Hash("passowrd",uint32(1234)))
+	fmt.Println(rabbitmqHash.Hash("passowrd", 0))
+	// salt = 1234
+	fmt.Println(rabbitmqHash.Hash("passowrd", 1234))
+	// salt = 0x908DC60A
+	fmt.Println(rabbitmqHash.Hash("test12", 0x908DC60A))
 }
 ```
 
@@ -37,11 +39,4 @@ func main() {
 
 ```
 $ go test
-```
-
-## Tagging
-
-```
-$ git tag v0.1.0
-$ git push origin --tags
 ```
